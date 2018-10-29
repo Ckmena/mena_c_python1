@@ -4,8 +4,12 @@ from random import randint
 #choices is an array => a container that can hold multiple items
 #arrays are 0-based -> the first item s 0, the second is 1, etc
 choices = ["Rock","Paper","Scissors"]
-# make the computer choose a weapon from the choices array at random
+#make the computer choose a weapon from the choices array at random
 computer_choice = choices[randint(0,2)]
+
+#computer choice
+#print("computer chooses: ", computer_choice)
+
 
 #set lives for computer and player
 player_life = 3
@@ -20,7 +24,7 @@ while player is False:
 	print("Your lives: ", player_life)
 	print("Computer lives: ", computer_life)
 	print("Choose your weapon !!!")
-	player = input("Rock, Paper or Scissors ?\n")
+	player = input(" Rock, Paper, or Scissors ?\n")
 
 #quit game
 	if player == "quit":
